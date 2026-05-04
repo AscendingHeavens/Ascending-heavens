@@ -30,7 +30,7 @@ export default function Nav() {
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6 md:px-10 h-[64px]">
         
         {/* Logo */}
-      <a href="#top" className="flex items-center gap-3 group">
+      <a href="./#top" className="flex items-center gap-3 group">
   
   {/* Wings Placeholder (you'll drop image here later) */}
   <div className="relative w-18 h-18 flex items-center justify-center">
@@ -67,9 +67,10 @@ export default function Nav() {
         {/* Nav Links */}
         <nav className="hidden md:flex items-center gap-8 text-sm text-white/60">
           {[
-            { name: "Services", href: "#services" },
-            { name: "Process", href: "#process" },
-            { name: "Work", href: "#transformation" },
+            { name: "Services", href: "./#services" },
+            { name: "Process", href: "./#process" },
+            { name: "Work", href: "./#transformation" },
+            {name:"Pricing", href:"/pricing"}
           ].map((item) => (
             <a
               key={item.name}

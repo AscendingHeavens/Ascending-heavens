@@ -7,6 +7,8 @@ import ContactProvider from "@/components/ContactProvider";
 import CursorWrapper from "@/components/CursorWrapper";
 import Analytics from "./Analytics";
 import { GoogleAnalytics } from "@next/third-parties/google";
+import Nav from "@/components/Nav";
+import WhatsAppFloat from "@/components/WhatsAppFloat";
 
 const inter = Inter({subsets:['latin'],variable:'--font-sans'});
 
@@ -88,8 +90,10 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Analytics />
          <ContactProvider>
+          <Nav/>
           <CursorWrapper/>
           {children}
+          <WhatsAppFloat/>
         </ContactProvider>
          <GoogleAnalytics gaId={process.env.NEXT_PUBLIC_GA_ID!} />
         </body>
