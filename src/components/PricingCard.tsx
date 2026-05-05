@@ -1,5 +1,5 @@
 
-import { CONTAINER_ANIMATION, FADE_IN_ANIMATION } from "@/lib/constants";
+import { CONTAINER_ANIMATION } from "@/lib/constants";
 
 import { motion } from "framer-motion";
 import { useState, useRef, useEffect } from "react";
@@ -13,7 +13,7 @@ interface PricingCardProps {
 const PricingCard: React.FC<PricingCardProps> = ({ title, items }) => {
   
   const [isVisible, setIsVisible] = useState(false);
-  const [scrollDirection, setScrollDirection] = useState("down");
+ 
   const sectionRef = useRef<HTMLDivElement | null>(null);
   const previousScrollY = useRef(0);
 
@@ -26,7 +26,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, items }) => {
 
   const handleScroll = () => {
     const currentScrollY = window.scrollY;
-    setScrollDirection(currentScrollY > previousScrollY.current ? "down" : "up");
+  
     previousScrollY.current = currentScrollY;
   };
 
@@ -60,7 +60,7 @@ const PricingCard: React.FC<PricingCardProps> = ({ title, items }) => {
         {items.map((item, index) => (
           <motion.div
             key={index}
-            variants={FADE_IN_ANIMATION(scrollDirection)}
+            
             initial="hidden"
             animate={isVisible ? "visible" : "hidden"}
             custom={index}
