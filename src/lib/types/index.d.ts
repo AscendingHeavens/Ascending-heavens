@@ -35,3 +35,10 @@ interface PricingCardItem {
   usd: string
   details: string
 }
+
+
+type ContactDialogProps = {
+  open: boolean;
+  onOpenChange: (open: boolean) => void;
+  source?: string;
+};

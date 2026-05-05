@@ -80,7 +80,7 @@ export default function Nav() {
           ))}
         </nav>
 
-        {/* CTA */}
+       
         <Button
           onClick={() => open("nav")}
           className="h-9 rounded-full bg-white text-black hover:bg-white/90 text-[13px] font-medium px-5 transition-all hover:scale-[1.05] active:scale-[0.97]"
