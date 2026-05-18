@@ -11,8 +11,6 @@ import {
 import { Button } from "./ui/button";
 import { ArrowUpRight, Check } from "lucide-react";
 import { toast } from "sonner";
-import { ApiService } from "@/lib/services/apiService";
-
 
 const EMPTY_FORM = { name: "", email: "", company: "", message: "" };
 
@@ -32,17 +30,36 @@ export default function ContactDialog({
 
   const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     setLoading(true);
 
     try {
-      const response = await ApiService.post("/contact", { ...form, source });
-      if (response.success) {
-        setSubmitted(true);
-        toast.success("Message received — we'll be in touch shortly.");
+      const res = await fetch("/api/contact", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          ...form,
+          source,
+        }),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.message || "Failed to send message");
       }
+
+      setSubmitted(true);
+
+      toast.success("Message received — we'll be in touch shortly.");
+
+      setForm(EMPTY_FORM);
     } catch (err: unknown) {
       const message =
         err instanceof Error ? err.message : "Failed to send message.";
+
       toast.error(message);
     } finally {
       setLoading(false);
@@ -54,7 +71,7 @@ export default function ContactDialog({
 
   return (
     <Dialog open={open} onOpenChange={onOpenChange}>
-      <DialogContent className="sm:max-w-[520px] bg-[#0B0B0D] border border-white/10 text-white rounded-2xl p-0 overflow-hidden">
+      <DialogContent className="sm:max-w-130 bg-[#0B0B0D] border border-white/10 text-white rounded-2xl p-0 overflow-hidden">
         <div className="p-8">
           <DialogHeader className="text-left space-y-3">
             <div className="text-[11px] uppercase tracking-[0.22em] text-white/50">
