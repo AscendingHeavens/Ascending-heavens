@@ -1,6 +1,6 @@
 "use client";
 
-import { useState, type FormEvent } from "react";
+import { ChangeEvent, useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -12,7 +12,14 @@ import { Button } from "./ui/button";
 import { ArrowUpRight, Check } from "lucide-react";
 import { toast } from "sonner";
 
-const EMPTY_FORM = { name: "", email: "", company: "", message: "" };
+type FormState = {
+  name: string;
+  email: string;
+  company: string;
+  message: string;
+};
+
+const EMPTY_FORM: FormState = { name: "", email: "", company: "", message: "" };
 
 export default function ContactDialog({
   open,
@@ -21,14 +28,15 @@ export default function ContactDialog({
 }: ContactDialogProps) {
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
-  const [form, setForm] = useState(EMPTY_FORM);
+  const [form, setForm] = useState<FormState>(EMPTY_FORM);
 
-  const patch =
-    (field: keyof typeof EMPTY_FORM) =>
-    (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) =>
-      setForm((prev) => ({ ...prev, [field]: e.target.value }));
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+  ) => {
+    setForm((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
-  const onSubmit = async (e: FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (e: ChangeEvent<HTMLFormElement>) => {
     e.preventDefault();
 
     setLoading(true);
@@ -48,7 +56,8 @@ export default function ContactDialog({
       const data = await res.json();
 
       if (!res.ok) {
-        throw new Error(data.message || "Failed to send message");
+        toast.error(data.message || "Failed to send message."); 
+        return;
       }
 
       setSubmitted(true);
@@ -106,15 +115,17 @@ export default function ContactDialog({
                   required
                   placeholder="Your name"
                   value={form.name}
-                  onChange={patch("name")}
+                  name="name"
+                  onChange={handleChange}
                   className={inputClass}
                 />
                 <input
                   required
                   type="email"
+                  name="email"
                   placeholder="Email"
                   value={form.email}
-                  onChange={patch("email")}
+                  onChange={handleChange}
                   className={inputClass}
                 />
               </div>
@@ -122,7 +133,8 @@ export default function ContactDialog({
               <input
                 placeholder="Company (optional)"
                 value={form.company}
-                onChange={patch("company")}
+                onChange={handleChange}
+                name="company"
                 className={inputClass}
               />
 
@@ -131,7 +143,8 @@ export default function ContactDialog({
                 rows={4}
                 placeholder="What's disconnected right now?"
                 value={form.message}
-                onChange={patch("message")}
+                onChange={handleChange}
+                name="message"
                 className="w-full rounded-lg bg-white/5 border border-white/10 px-4 py-3 text-sm text-white placeholder:text-white/30 focus:outline-none focus:border-white/30 transition-colors resize-none"
               />
 
