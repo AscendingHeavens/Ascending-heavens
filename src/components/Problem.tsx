@@ -7,23 +7,23 @@ import { Unplug, Compass, TrendingDown, Shuffle } from "lucide-react";
 const CARDS = [
   {
     icon: Unplug,
-    title: "Disconnected tools",
-    body: "Ten dashboards. Zero signal. Your stack fights itself while opportunity slips.",
+    title: "Manual operations",
+    body: "Critical workflows still depend on spreadsheets, copy-paste, and human effort. Scale becomes impossible.",
   },
   {
     icon: Compass,
-    title: "No clear direction",
-    body: "A roadmap built from gut feelings is just fog. Teams drift. Momentum dies.",
+    title: "Engineering bottlenecks",
+    body: "Features sit in backlog while your team fights technical debt, hiring delays, and competing priorities.",
   },
   {
     icon: TrendingDown,
-    title: "Poor conversions",
-    body: "Traffic comes. Nothing sticks. The funnel leaks before it reaches value.",
+    title: "Slow product velocity",
+    body: "Months pass between idea and release. Competitors ship faster while opportunities disappear.",
   },
   {
     icon: Shuffle,
-    title: "Random marketing",
-    body: "A launch here. A campaign there. No rhythm, no compounding, no system.",
+    title: "Disconnected systems",
+    body: "Data lives everywhere. Nothing talks to each other. Decisions are made without visibility.",
   },
 ];
 
@@ -78,9 +78,9 @@ export default function Problem() {
           </div>
 
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl tracking-[-0.035em] leading-[1.05] text-white">
-            Growth shouldn't feel
+            Growth isn't the problem.
             <br />
-            <span className="text-white/40">this chaotic.</span>
+            <span className="text-white/40">Execution is.</span>
           </h2>
         </motion.div>
 

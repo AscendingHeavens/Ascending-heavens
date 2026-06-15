@@ -54,11 +54,17 @@ export default function Struggle() {
           }}
           className="font-display text-3xl md:text-5xl lg:text-6xl tracking-[-0.02em] leading-[1.15] text-white/35"
         >
-          You try <span className="text-white">hiring agencies.</span>
-          <br />
-          You try <span className="text-white">managing everything yourself.</span>
-          <br />
-          But things <span className="text-white italic">still break.</span>
+Customers are waiting.
+  <br />
+  Features are delayed.
+  <br />
+  Your team is stretched thin.
+  <br />
+  Yet somehow,
+  <br />
+  <span className="text-white">
+    nothing moves fast enough.
+  </span>
         </motion.p>
       </motion.div>
     </section>

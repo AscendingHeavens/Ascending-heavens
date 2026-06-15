@@ -50,13 +50,14 @@ export default function FinalCTA() {
             </div>
 
             {/* Headline */}
-            <h2 className="font-display text-4xl md:text-6xl lg:text-7xl tracking-[-0.03em] leading-[1.04] text-[#09090B] max-w-3xl mx-auto">
-              You're closer than you think.
-              <br />
-              <span className="text-black/50">
-                The only thing missing is the right system.
-              </span>
-            </h2>
+            <h2 className="font-display text-4xl md:text-6xl lg:text-7xl tracking-[-0.03em] leading-[1.04] text-[#09090B] max-w-4xl mx-auto">
+  Your roadmap isn't the problem.
+  <br />
+  <span className="text-black/50">
+    Execution is.
+  </span>
+  
+</h2>
 
             {/* CTA */}
             <div className="mt-10 flex flex-col sm:flex-row items-center justify-center gap-3">

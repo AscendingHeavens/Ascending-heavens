@@ -1,29 +1,41 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Layers, Rocket, LineChart } from "lucide-react";
+import {  Database, Boxes, BrainCircuit } from "lucide-react";
 
 const SERVICES = [
   {
-    icon: Layers,
-    tag: "01 — Build",
-    title: "Websites & apps, engineered to convert.",
-    body: "Editorial craft meets production-grade code. Every pixel earns its place.",
-    bullets: ["Marketing sites", "Product UX", "Custom web apps"],
+    icon: Boxes,
+    tag: "01 — Product Engineering",
+    title: "Software built around your business.",
+    body: "Custom SaaS platforms, internal tools, dashboards, and customer-facing products engineered for scale.",
+    bullets: [
+      "Custom web applications",
+      "Internal tools & dashboards",
+      "Startup MVP development",
+    ],
   },
   {
-    icon: Rocket,
-    tag: "02 — Scale",
-    title: "Funnels and growth systems that compound.",
-    body: "From first touch to loyal customer — one connected loop, built to repeat.",
-    bullets: ["Acquisition funnels", "Lifecycle automation", "Content engines"],
+    icon: BrainCircuit,
+    tag: "02 — AI Systems",
+    title: "AI features that ship to production.",
+    body: "From retrieval systems to intelligent workflows, we integrate AI where it creates real business value.",
+    bullets: [
+      "RAG pipelines",
+      "LLM integrations",
+      "Recommendation engines",
+    ],
   },
   {
-    icon: LineChart,
-    tag: "03 — Optimize",
-    title: "Performance and analytics, made decisive.",
-    body: "Clarity on what works, the discipline to remove what doesn't. Every week.",
-    bullets: ["Experiment ops", "Dashboards", "Conversion review"],
+    icon: Database,
+    tag: "03 — Data Infrastructure",
+    title: "Turn fragmented data into decisions.",
+    body: "Build the pipelines, analytics, and reporting systems that help teams move faster and smarter.",
+    bullets: [
+      "Analytics dashboards",
+      "Data pipelines",
+      "Business intelligence",
+    ],
   },
 ];
 

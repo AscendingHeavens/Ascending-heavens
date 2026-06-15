@@ -7,8 +7,6 @@ import { motion } from "framer-motion";
 export default function Hero() {
   const { open } = useContact();
 
-
-
   const stagger = {
     show: {
       transition: {
@@ -75,8 +73,8 @@ export default function Hero() {
           //  variants={fadeUp}
           className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3.5 py-1.5 text-[11px] uppercase tracking-[0.22em] text-white/70 font-mono-ui mb-8"
         >
-          <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />A
-          digital agency for founders on the ascent
+          <span className="w-1.5 h-1.5 rounded-full bg-white animate-pulse" />
+          Engineers who own outcomes
         </motion.div>
 
         {/* Heading */}
@@ -84,10 +82,10 @@ export default function Hero() {
           //  variants={fadeUp}
           className="font-display font-medium text-white text-[40px] sm:text-6xl lg:text-7xl leading-[1.02] tracking-[-0.03em]"
         >
-          You're building something bigger.
+          Ship Products Faster
           <br />
           <span className="text-white/45">
-            But everything feels disconnected.
+            Your startup doesn't need more developers.
           </span>
         </motion.h1>
 
@@ -96,8 +94,7 @@ export default function Hero() {
           // variants={fadeUp}
           className="mt-7 max-w-2xl mx-auto text-base md:text-lg text-white/55 leading-relaxed"
         >
-          Your website, your marketing, your systems nothing works together.
-          So growth slows down.
+          It needs a product engineering team that can own outcomes.
         </motion.p>
 
         {/* CTA */}
@@ -136,9 +133,15 @@ export default function Hero() {
   );
 }
 
-function FloatingChip({ label, value, reverse = false }
-  :{label:string,value:string,reverse?:boolean}
-)   {
+function FloatingChip({
+  label,
+  value,
+  reverse = false,
+}: {
+  label: string;
+  value: string;
+  reverse?: boolean;
+}) {
   return (
     <div
       className={`flex items-center gap-3 rounded-2xl border border-white/10 bg-white/[0.04] backdrop-blur-xl px-4 py-3 shadow-[0_20px_60px_rgba(0,0,0,0.4)] ${

@@ -55,15 +55,17 @@ export default function Footer() {
   </a>
 
   {/* Headline */}
-  <p className="font-display text-3xl md:text-5xl tracking-[-0.02em] leading-[1.1] text-white/90 max-w-lg">
-    Not built to exist. <br /> Built to ascend.
-  </p>
+<p className="font-display text-3xl md:text-5xl tracking-[-0.02em] leading-[1.1] text-white/90 max-w-lg">
+  Engineering that moves
+  <br />
+  startups forward.
+</p>
 
-  {/* Subtext */}
-  <p className="mt-5 text-white/40 text-sm max-w-sm leading-relaxed">
-    We don’t design websites.  
-    We architect perception, direction, and dominance — for founders who refuse to stay grounded.
-  </p>
+<p className="mt-5 text-white/40 text-sm max-w-md leading-relaxed">
+  Ascending Heavens is a product engineering partner for
+  startups building software, AI systems, and scalable
+  infrastructure.
+</p>
 
 </div>
 

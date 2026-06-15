@@ -5,30 +5,26 @@ import { motion } from "framer-motion";
 import { X, Check } from "lucide-react";
 
 const BEFORE = [
+  "Manual workflows",
+  "Engineering bottlenecks",
   "Disconnected tools",
-  "Unclear growth",
-  "Constant firefighting",
-  "Scattered messaging",
+  "Slow product releases",
 ];
 
 const AFTER = [
-  "Unified systems",
-  "Clear direction",
-  "Scalable growth",
-  "One coherent story",
+  "Automated systems",
+  "Faster shipping cycles",
+  "Unified infrastructure",
+  "Scalable product growth",
 ];
 
 export default function Transformation() {
- 
-
   return (
     <section
       id="transformation"
       className="relative py-28 md:py-36 px-6 md:px-10 bg-white text-[#09090B]"
     >
       <div className="max-w-6xl mx-auto">
-
-      
         <motion.div
           initial="hidden"
           whileInView="show"
@@ -37,19 +33,18 @@ export default function Transformation() {
           className="max-w-2xl mb-16"
         >
           <div className="text-[11px] uppercase tracking-[0.22em] text-black/45 font-mono-ui mb-5">
-            The transformation
+            The outcome
           </div>
 
           <h2 className="font-display text-4xl md:text-5xl lg:text-6xl tracking-[-0.03em] leading-[1.05]">
-            From chaos to clarity —
+            From bottlenecks to
             <br />
-            <span className="text-black/45">in one system.</span>
+            <span className="text-black/45">product velocity.</span>
           </h2>
         </motion.div>
 
         {/* Panels */}
         <div className="grid grid-cols-1 md:grid-cols-2 rounded-3xl overflow-hidden border border-black/10">
-
           {/* BEFORE */}
           <motion.div
             initial={{ opacity: 0, x: -40 }}

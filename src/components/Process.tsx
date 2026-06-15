@@ -6,23 +6,23 @@ import { motion } from "framer-motion";
 const STEPS = [
   {
     n: "01",
-    title: "Understand",
-    body: "We dig into your audience, funnel, and current stack. Every assumption gets a receipt.",
+    title: "Understand the Constraint",
+    body: "Every startup has a bottleneck. We find the one preventing growth.",
   },
   {
     n: "02",
-    title: "Align",
-    body: "We map a single strategy where brand, product, and marketing speak the same language.",
+    title: "Design the System",
+    body: "Architecture, workflows, AI integrations, and data flows built around your business.",
   },
   {
     n: "03",
-    title: "Build",
-    body: "Design and engineering ship as one team — in weeks, not quarters.",
+    title: "Ship Fast",
+    body: "We move from roadmap to production with direct ownership and minimal overhead.",
   },
   {
     n: "04",
-    title: "Scale",
-    body: "Weekly reviews compound the wins. What works gets doubled. What doesn't gets killed.",
+    title: "Create Leverage",
+    body: "Automation, analytics, and scalable infrastructure that compound over time.",
   },
 ];
 
@@ -45,15 +45,15 @@ export default function Process() {
           className="max-w-2xl mb-16"
         >
           <div className="text-[11px] uppercase tracking-[0.22em] text-black/45 font-mono-ui mb-5">
-            The path
-          </div>
+  The process
+</div>
 
-          <h2 className="font-display text-4xl md:text-5xl lg:text-6xl tracking-[-0.03em] leading-[1.05]">
-            Your path to{" "}
-            <span className="italic font-light text-black/55">
-              ascent.
-            </span>
-          </h2>
+<h2 className="font-display text-4xl md:text-5xl lg:text-6xl tracking-[-0.03em] leading-[1.05]">
+  From idea to
+  <span className="italic font-light text-black/55">
+    production.
+  </span>
+</h2>
         </motion.div>
 
         {/* Timeline */}
