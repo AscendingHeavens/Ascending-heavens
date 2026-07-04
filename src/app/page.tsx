@@ -1,3 +1,4 @@
+
 import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
 import Hero from '@/components/Hero'
@@ -27,6 +28,7 @@ const page = () => {
         <Transformation />
         <Process />
         <FinalCTA />
+        {/* <FAQ/> */}
       </main>
 
       <Footer />

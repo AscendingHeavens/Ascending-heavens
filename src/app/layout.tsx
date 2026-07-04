@@ -23,22 +23,22 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Ascending Heavens | Website Development & Digital Solutions Agency",
-  
+  title: "Ascending Heavens | Product Engineering Team for Startups",
+
   description:
-    "Ascending Heavens is a modern website development agency delivering high-performance websites, scalable web apps, and digital solutions to help businesses grow online.",
+    "Ascending Heavens is a product engineering team that helps startups ship software, AI systems, and data infrastructure faster — without hiring a full in-house team.",
 
   keywords: [
     "Ascending Heavens",
-    "website development",
-    "web development agency",
-    "Next.js development",
-    "frontend development",
-    "full stack development",
-    "custom websites",
-    "digital solutions agency",
-    "web design India",
-    "SEO optimized websites"
+    "product engineering team",
+    "startup software development",
+    "AI integration for startups",
+    "MVP development",
+    "SaaS product development",
+    "AI systems and RAG pipelines",
+    "data infrastructure for startups",
+    "product engineering agency",
+    "startup engineering partner"
   ],
 
   authors: [{ name: "Ascending Heavens Team" }],
@@ -46,9 +46,9 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://ascending-heavens.com/"),
 
   openGraph: {
-    title: "Ascending Heavens | Website Development Agency",
+    title: "Ascending Heavens | Product Engineering Team for Startups",
     description:
-      "Build powerful, scalable, and visually stunning websites with Ascending Heavens.",
+      "A product engineering partner for startups — software, AI systems, and scalable infrastructure, built by a team that owns outcomes.",
     url: "https://ascending-heavens.com/",
     siteName: "Ascending Heavens",
     images: [
@@ -56,7 +56,7 @@ export const metadata: Metadata = {
         url: "/favicon.ico", 
         width: 1200,
         height: 630,
-        alt: "Ascending Heavens Website Development Agency",
+        alt: "Ascending Heavens — Product Engineering Team for Startups",
       },
     ],
     type: "website",
@@ -64,9 +64,9 @@ export const metadata: Metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "Ascending Heavens | Website Development Agency",
+    title: "Ascending Heavens | Product Engineering Team for Startups",
     description:
-      "We craft high-performance websites and digital experiences.",
+      "We help startups ship software, AI systems, and data infrastructure faster.",
     images: ["/og-image.png"],
   },
 
@@ -75,7 +75,6 @@ export const metadata: Metadata = {
     follow: true,
   },
 };
-
 export default function RootLayout({
   children,
 }: Readonly<{

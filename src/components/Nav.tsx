@@ -65,6 +65,7 @@ export default function Nav() {
             { name: "Process", href: "./#process" },
             { name: "Work", href: "./#transformation" },
             { name: "Showcase", href: "./showcase" },
+            { name: "FAQ", href: "./FAQ" },
             // {name:"Pricing", href:"/pricing"}
           ].map((item) => (
             <a
