@@ -11,11 +11,7 @@ const FAQS = [
     answer:
       "Three tiers, priced on scope, not hours. \"Ship It\" is project-based, $5K–$20K, for one-off builds like landing pages, MVPs, or API integrations — fixed scope, fixed price, 2–6 week delivery. \"Build & Grow\" is a $5K–$10K/month retainer for ongoing product development plus growth execution, typically 3–6 months while a startup hires internally. \"AI Integration\" is project-based, $10K–$30K, for RAG pipelines, recommendation engines, and LLM-powered features, with a discovery phase and 4–12 week delivery.",
   },
-  {
-    question: "Who's actually building my product — senior engineers, or juniors managed by a PM?",
-    answer:
-      "There is no PM layer. Three senior specialists work as one unit: Rishi Mishra handles systems architecture, backend, and AI pipelines; Nikhil Parbat handles backend infrastructure, data pipelines, and analytics; Sarvesh Shinde handles frontend, design, and growth execution. The person you talk to is the person writing the code — no game of telephone, no bench of interchangeable juniors.",
-  },
+ 
   {
     question: "How is this different from hiring a local senior engineer?",
     answer:
