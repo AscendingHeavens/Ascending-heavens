@@ -6,47 +6,56 @@ import { ChevronDown } from "lucide-react";
 import Script from "next/script";
 
 const FAQS = [
-  {
-    question: "What's your pricing model?",
+   {
+    question: "How much does it cost to build a website in India?",
     answer:
-      "Three tiers, priced on scope, not hours. \"Ship It\" is project-based, $5K–$20K, for one-off builds like landing pages, MVPs, or API integrations — fixed scope, fixed price, 2–6 week delivery. \"Build & Grow\" is a $5K–$10K/month retainer for ongoing product development plus growth execution, typically 3–6 months while a startup hires internally. \"AI Integration\" is project-based, $10K–$30K, for RAG pipelines, recommendation engines, and LLM-powered features, with a discovery phase and 4–12 week delivery.",
-  },
- 
-  {
-    question: "How is this different from hiring a local senior engineer?",
-    answer:
-      "A single senior engineer costs CHF 150K+/year in Zurich, $80K+ in Dubai, or €70K+ in Berlin — and that's one specialization. Ascending Heavens gives you three specializations (systems/AI architecture, backend/data, frontend/growth) working as one team, for less than the cost of one local hire, with zero recruitment overhead or onboarding time.",
+      "The cost of building a website depends on the project's complexity, features, and design requirements. Our business websites typically start from ₹20,000, while larger corporate websites, e-commerce platforms, and custom web applications are priced based on their scope. Every project receives a transparent proposal with no hidden charges."
   },
   {
-    question: "How is this different from Upwork freelancers or a large agency like Toptal?",
+    question: "How much does it cost to build a custom SaaS product?",
     answer:
-      "Freelancers on Upwork are strangers who've never worked together and don't share context. Large agencies staff a bench of interchangeable juniors behind a PM who doesn't code. Ascending Heavens is three senior specialists who already work together daily, review each other's code, and deliver as one unit — you're not assembling a team, you're hiring one.",
+      "Custom SaaS development pricing depends on the number of features, user roles, integrations, infrastructure, and scalability requirements. MVPs generally require a smaller investment than enterprise-grade SaaS platforms. After a discovery session, we provide a detailed scope, timeline, and fixed project estimate."
   },
   {
-    question: "Do you actually build AI features, or just talk about it?",
+    question: "Do you build AI-powered applications?",
     answer:
-      "AI is core, not bolted on. The team ships production RAG pipelines with hybrid search (vector + BM25 + reciprocal rank fusion) and cross-encoder reranking, LLM orchestration with multi-tier routing, and embedding-based retrieval systems — not outsourced to a third-party consultant when a client asks for AI features.",
+      "Yes. We develop AI-powered web applications, internal business tools, automation systems, AI chatbots, retrieval-augmented generation (RAG) applications, recommendation systems, workflow automation, and custom AI integrations tailored to business requirements."
   },
   {
-    question: "How is this different from a no-code tool or an AI app builder?",
+    question: "What technologies do you use for software development?",
     answer:
-      "No-code tools and Bubble-style builders work until custom logic is needed, then break. Ascending Heavens builds real, maintainable, production-grade systems — Go and Python backends, React/Next.js frontends, PostgreSQL/ClickHouse data layers — engineered to be extended by a client's future in-house hires, not just a working demo.",
+      "We build modern applications using Next.js, React, TypeScript, Go, Python, PostgreSQL, ClickHouse, Node.js, Tailwind CSS, cloud platforms, and modern AI frameworks. Every solution is designed to be scalable, secure, and easy to maintain."
   },
   {
-    question: "Do I need to hire separate vendors for backend, frontend, and growth?",
+    question: "Can you redesign an existing website?",
     answer:
-      "No. One team covers backend-to-browser: Go/Python APIs, React/Next.js frontends, PostgreSQL/ClickHouse data layers, and the growth layer — landing pages, funnels, and ad campaigns. One invoice, one Slack channel, one team that knows the entire codebase, instead of three vendors who don't talk to each other.",
+      "Yes. We redesign existing websites to improve user experience, performance, search engine optimization (SEO), conversion rates, and mobile responsiveness while preserving your existing content and business goals."
   },
   {
-    question: "What kind of companies do you work with?",
+    question: "Do you provide SEO with website development?",
     answer:
-      "Primarily funded B2B SaaS startups from Seed to Series B, 5–30 person teams, $500K–$10M ARR, with validated product-market fit but no full in-house engineering or growth team yet — companies that need execution velocity, not another strategy deck. Core verticals include e-commerce infrastructure, healthtech, fintech, logistics/supply-chain SaaS, martech, and AI-native products.",
+      "Yes. Every website is built with technical SEO best practices, including fast loading speeds, clean code, responsive design, structured metadata, optimized images, and search-engine-friendly architecture. Advanced SEO and content strategy are also available as an additional service."
   },
   {
-    question: "What if my project doesn't have a clear spec yet?",
+    question: "How long does it take to build a website or web application?",
     answer:
-      "A working product, budget, and product sense are the baseline — pre-revenue equity-only deals and \"just build me an app\" requests with no spec aren't a fit. For everything else, projects with a defined scope start with a discovery phase before any fixed-price work begins, so the spec gets sharpened before building starts, not guessed at.",
+      "Project timelines depend on complexity. Landing pages and business websites usually take a few weeks, while e-commerce platforms, SaaS products, CRM systems, AI applications, and enterprise software require longer development cycles based on their requirements."
   },
+  {
+    question: "Do you work with international clients?",
+    answer:
+      "Yes. We work with startups, SMEs, and enterprises across India, Europe, the United States, the United Arab Emirates, and other global markets. Our team collaborates remotely using modern project management and communication tools."
+  },
+  {
+    question: "Do you offer custom software development for startups?",
+    answer:
+      "Yes. We help startups design, build, and scale MVPs, SaaS platforms, AI applications, internal tools, dashboards, APIs, and customer-facing web applications. Our development process focuses on speed, scalability, and long-term product growth."
+  },
+  {
+    question: "Why should I choose Ascending Heavens over a freelance developer?",
+    answer:
+      "Unlike hiring an individual freelancer, you work with a multidisciplinary team covering frontend development, backend engineering, AI development, cloud infrastructure, UI/UX, and product strategy. This enables faster delivery, better code quality, and long-term technical support from one team."
+  }
 ];
 
 export default function FAQ() {
