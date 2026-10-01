@@ -38,8 +38,11 @@ export default function Nav() {
             {/* IMAGE GOES HERE */}
             {/* Replace this div with your wings PNG */}
             <img
-              src="/logo.png"
+              src="/logo.webp"
               alt="Ascending Heavens Wings"
+              width={90}
+              height={88}
+              fetchPriority="high"
               className="relative h-full w-auto object-contain"
             />
           </div>

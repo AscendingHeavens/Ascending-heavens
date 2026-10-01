@@ -116,6 +116,8 @@ export default function FAQ() {
               >
                 <button
                   onClick={() => setOpenIndex(isOpen ? null : i)}
+                  aria-expanded={isOpen}
+                  aria-controls={`faq-answer-${i}`}
                   className="w-full flex items-center justify-between gap-6 p-6 md:p-8 text-left"
                 >
                   <div className="flex items-start gap-4">
@@ -141,6 +143,7 @@ export default function FAQ() {
                 <AnimatePresence initial={false}>
                   {isOpen && (
                     <motion.div
+                      id={`faq-answer-${i}`}
                       initial={{ height: 0, opacity: 0 }}
                       animate={{ height: "auto", opacity: 1 }}
                       exit={{ height: 0, opacity: 0 }}

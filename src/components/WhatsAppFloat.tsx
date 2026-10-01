@@ -8,6 +8,7 @@ export default function WhatsAppFloat() {
   return (
     <motion.a
       href={`https://wa.me/${phone}`}
+      aria-label="Chat with Ascending Heavens on WhatsApp"
       target="_blank"
       rel="noopener noreferrer"
       initial={{ opacity: 0, scale: 0.8 }}
