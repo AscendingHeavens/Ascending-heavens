@@ -1,0 +1,22 @@
+# Ascending Heavens
+
+> Ascending Heavens is a product engineering team that helps startups build software, AI systems, and data infrastructure.
+
+## What we do
+
+- Product engineering: custom web applications, SaaS products, startup MVPs, internal tools, and dashboards.
+- AI systems: RAG pipelines, LLM integrations, recommendation systems, and workflow automation.
+- Data infrastructure: analytics dashboards, data pipelines, reporting, and business intelligence.
+- Website redesign and technical SEO are also described in our published FAQ.
+
+## Useful pages
+
+- [Home](https://ascending-heavens.com/): company overview, services, process, and selected work.
+- [Frequently asked questions](https://ascending-heavens.com/FAQ): answers about services, technologies, pricing, timelines, and collaboration.
+- [Project showcase](https://ascending-heavens.com/showcase): selected project examples.
+- [Pricing](https://ascending-heavens.com/pricing): project pricing information.
+
+## Contact
+
+- Email: services@ascending-heavens.com
+- LinkedIn: https://www.linkedin.com/company/ascending-heavens

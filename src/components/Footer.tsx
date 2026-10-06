@@ -34,7 +34,9 @@ export default function Footer() {
       <div className="absolute inset-0 bg-purple-500/20 blur-2xl opacity-60 group-hover:opacity-100 transition-all duration-500" />
 
       <img
-        src="/logo.png"
+        src="/logo.webp"
+        width={64}
+        height={64}
         alt="Ascending Heavens Wings"
         className="relative h-full w-auto object-contain"
       />
